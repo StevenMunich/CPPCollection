@@ -48,10 +48,10 @@ int main(){
 	std::cout << "Trigger is defined \n";
 	#endif
 	//IF not defined
-	#ifndef NIGGER
-	#define NIGGER "The N word"
+	#ifndef PIG
+	#define PIG "oink oink"
 	#endif
-	std::cout << NIGGER << std::endl;
+	std::cout << PIG << std::endl;
 	return 0;
 	//nested if - this example is if LINUX & WINDOWS both are true
 	#ifdef WIN64
