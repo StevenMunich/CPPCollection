@@ -31,7 +31,7 @@ int Func(){
 	 	cout << *numPtr << " is the value, address is: " << numPtr << endl;
 	 	numPtr++;
 	 }
-	 //Going out of bounds on array to access "leaks" variable in memory
+	 //Going out of bounds on array to access areas of memory we shouldn't, including other variables in memory.
 	 for(count = 0; count < 4; count++){
 	 
 	 cout << *numPtr << " is dereferenced, address is: " << numPtr << endl;
@@ -41,4 +41,5 @@ int Func(){
 	auto PtrFun1 = PtrFun;
 	cout << &PtrFun1;
 }
+
 
