@@ -57,7 +57,7 @@ Let us elaborate on this a bit. In the expression (*studentPtr).gpa, the operato
 
 Consider the expression *studentPtr.gpa. Let us see how this expression gets evaluated. Because . (dot) has a higher precedence than *, the expression studentPtr.gpa evaluates first. The expression studentPtr.gpa would result in a syntax error, as studentPtr is not a struct variable, so it has no such component as gpa.
 
-As you can see, in the expression (*studentPtr).gpa, the parentheses are important. However, typos can be problematic. Therefore, to simplify the accessing of class or struct components via a pointer, C++ provides another operator called the member access operator arrow, ->. The operator -> consists of two consecutive symbols: a hyphen and the “greater than” sign.
+As you can see, in the expression (*studentPtr).gpa, the parentheses are important. However, typos can be problematic. Therefore, to simplify the accessing of class or struct components via a pointer, C++ provides another operator called the member access operator arrow, ->. The operator -> consists of two consecutive symbols: a hyphen and the â€œgreater thanâ€ sign.
 
 The syntax for accessing a class (struct) member using the operator -> is:
 
@@ -108,7 +108,7 @@ int dynoVar(){
 	
 	//Now p is pointing to new memory without deleting 28 stored in first adress pointed too
 	p = new int;
-	*p = 73; //this is called memory leaking. not deleteing memory.
+	*p = 73; //this is called memory leaking(not deleteing previously allocated memory and now there is no way for the program to get to it, except for math with pointers using an object stored near your lost memory).
 	cout << p <<  endl << &p << endl << *p << endl;
 	//deletes values in stored memory
 	//However, pointers still point to same address	
@@ -189,3 +189,4 @@ int main(){
 ptrArray();
 
 }
+
